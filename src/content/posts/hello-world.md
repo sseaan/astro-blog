@@ -2,7 +2,7 @@
 title: Hello World
 date: 2025-11-23
 tags: ['Deployment']
-categories: 教程
+categories: ['教程']
 comments: true
 ---
 
@@ -10,7 +10,7 @@ comments: true
 
 在经过半天的折腾后，我终于把这个博客搭起来了 😭
 
-这个博客使用的是 Astro 框架和 Gyoza 主题搭建的
+这个博客使用的是 [Astro](https://astro.build/) 框架和 [Gyoza](https://github.com/lxchapu/astro-gyoza) 主题搭建的
 
 使用的是 EdgeOne Pages 部署
 
@@ -18,7 +18,7 @@ comments: true
 
 ### 克隆仓库
 
-登录 Github 账号，打开 lxchapu/astro-gyoza，点击右上角的 Fork 按钮，将仓库克隆到你自己的账号下。
+登录 Github 账号，打开 [lxchapu/astro-gyoza](https://github.com/lxchapu/astro-gyoza)，点击右上角的 Fork 按钮，将仓库克隆到你自己的账号下。
 
 复制这个仓库的地址，打开终端，使用 git clone 命令将仓库克隆到本地。
 
@@ -142,12 +142,12 @@ Gyoza 的配置存储在 src/config.json 中
 
 本博客采用 EdgeOne Pages 部署
 
-Vercel 部署可参考 [Gyazo 示例网站]https://gyoza.lxchapu.com/posts/guide#%E9%83%A8%E7%BD%B2%E5%88%B0-vercel 中的描述
+Vercel 部署可参考 [Gyazo 示例网站](https://gyoza.lxchapu.com/posts/guide#%E9%83%A8%E7%BD%B2%E5%88%B0-vercel) 中的描述
 
 #### EdgeOne Pages 部署
 
 在 EdgeOne Pages 界面中选择导入 Github 仓库，选择之前 Fork 的 Gyoza 模板仓库
 
-剩余配置 EdgeOne 会自动识别为 Astro ，直接点击开始部署就👌了
+剩余配置 EdgeOne 会自动识别为 Astro，直接点击开始部署就👌了
 
 部署完成后可以进入 Pages 管理页面配置绑定域名等功能

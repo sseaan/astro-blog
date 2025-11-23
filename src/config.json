@@ -3,7 +3,7 @@
     "url": "https://blog.ssean.cn",
     "title": "Sean's Blog",
     "description": "A slow-updating high school student blog built with Astro.",
-    "keywords": "Gyoza,blog,Astro,scool",
+    "keywords": "Gyoza,blog,Astro",
     "lang": "zh-CN",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
@@ -53,7 +53,6 @@
   },
   "color": {
     "accent": [
-      { "light": "#F55555", "dark": "#FCCF31" },
       { "light": "#0396FF", "dark": "#ABDCFF" },
       { "light": "#fb7287", "dark": "#99D8CF" },
       { "light": "#F072B6", "dark": "#FFF886" },
@@ -113,7 +112,7 @@
     "serverURL": "https://waline.lxchapu.com"
   },
   "sponsor": {
-    "wechat": "https://img.ssean.cn/sponsor.png"
+    "wechat": "https://img.ssean.cn/cdn/sponsor.png"
   },
   "analytics": {
     "enable": true,
