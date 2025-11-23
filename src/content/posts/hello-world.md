@@ -1,62 +1,50 @@
 ---
-title: Gyoza 使用指南
-date: 2024-04-01
-lastMod: 2024-08-10T03:58:16.758Z
-summary: 欢迎使用 Gyoza，Gyoza 是一款 Astro 博客主题，它保持简洁和可爱的风格。本篇文章将会介绍如何使用并部署 Gyoza。
-category: 教程
-tags: [Astro, Gyoza]
-sticky: 1
+title: Hello World
+date: 2025-11-23
+tags: ['Deployment']
+categories: 教程
+comments: true
 ---
 
-## 前置条件
+欢迎来到我的博客！
 
-- node 版本 >= 18.18.0
-- pnpm 版本 > 8.1.0
+在经过半天的折腾后，我终于把这个博客搭起来了 😭
 
-## 安装
+这个博客使用的是 Astro 框架和 Gyoza 主题搭建的
+
+使用的是 EdgeOne Pages 部署
+
+大致流程如下：
 
 ### 克隆仓库
 
-登录 Github 账号，打开 [lxchapu/astro-gyoza](https://github.com/lxchapu/astro-gyoza)，点击右上角的 Fork 按钮，将仓库克隆到你自己的账号下。
+登录 Github 账号，打开 lxchapu/astro-gyoza，点击右上角的 Fork 按钮，将仓库克隆到你自己的账号下。
 
-复制这个仓库的地址，打开终端，使用 `git clone` 命令将仓库克隆到本地。
-
-> 本项目推荐使用 pnpm 作为你的包管理器，如果你还没有安装 pnpm，请先安装 pnpm。
+复制这个仓库的地址，打开终端，使用 git clone 命令将仓库克隆到本地。
 
 ### 安装依赖
 
+在目录下打开终端
+
 ```sh
-cd astro-gyoza
 pnpm install
 ```
 
-### 命令介绍
+### 本地调试命令
 
-本地运行
-
-```sh
-pnpm dev
-```
-
-打包静态文件
-
-```sh
-pnpm build
-```
-
-本地预览
-
-```sh
-pnpm preview
-```
+| Command      | Action                              |
+| ------------ | ----------------------------------- |
+| pnpm i       | 安装依赖                            |
+| pnpm dev     | 启动本地开发服务器于 localhost:4321 |
+| pnpm build   | 将您的生产站点构建到 ./dist/        |
+| pnpm preview | 在部署前本地预览您的构建            |
+| pnpm format  | 使用 Prettier 格式化代码            |
 
 ### 配置项
 
-本项目中的绝大部分配置都定义在 `src/config.json` 文件中。
+Gyoza 的配置存储在 src/config.json 中
 
-你应该首先将 `site.url` 修改成自己的域名，避免导航错误。
-
-以下是配置项的说明：
+以下为 Gyoza 示例网站上的示例配置
 
 ```json
 {
@@ -150,15 +138,16 @@ pnpm preview
 }
 ```
 
-## 部署
+### 部署
 
-> 这里只介绍了 Vercel，你当然可以选择其他平台例如：Cloudflare Pages 或你自己的服务器。  
-> 部署之前，确保你已经修改 `site.url`。
+本博客采用 EdgeOne Pages 部署
 
-### 部署到 Vercel
+Vercel 部署可参考 [Gyazo 示例网站]https://gyoza.lxchapu.com/posts/guide#%E9%83%A8%E7%BD%B2%E5%88%B0-vercel 中的描述
 
-登录 Vercel 账号，点击右上角的 Add new... 选择 Project。然后在 Import Git Repository 中选择刚刚 Fork 的仓库，点击 Import 按钮。
+#### EdgeOne Pages 部署
 
-进入项目配置页面，直接点击 Deploy 按钮，静静等待部署完成就 👌 了。
+在 EdgeOne Pages 界面中选择导入 Github 仓库，选择之前 Fork 的 Gyoza 模板仓库
 
-Vercel 会为你分配一个域名，你可以在项目设置中设置自定义域名，更多操作请参考 Vercel 文档。
+剩余配置 EdgeOne 会自动识别为 Astro ，直接点击开始部署就👌了
+
+部署完成后可以进入 Pages 管理页面配置绑定域名等功能
